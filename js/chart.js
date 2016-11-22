@@ -71,7 +71,7 @@ var panel1 = {
     "showCategoryAxis": true,
     "title": "Value",
     "stockGraphs": [{
-        title: "Değer2 : ",
+        title: "Değer1 : ",
         "id": "g1",
         "useDataSetColors": false,
         "lineColor": "#995BBE",
