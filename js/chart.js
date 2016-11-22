@@ -9,10 +9,10 @@ generateChartData();
 
 function generateChartData() {
     var firstDate = new Date();
-    firstDate.setDate(firstDate.getDate() - 300000);
+    firstDate.setDate(firstDate.getDate() - 100000);
     firstDate.setHours(0, 0, 0, 0);
 
-    for (var i = 0; i < 300000; i++) {
+    for (var i = 0; i < 100000; i++) {
         var newDate = new Date(firstDate);
         newDate.setDate(newDate.getDate() + i);
 
