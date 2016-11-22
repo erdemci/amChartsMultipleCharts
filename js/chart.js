@@ -9,10 +9,10 @@ generateChartData();
 
 function generateChartData() {
     var firstDate = new Date();
-    firstDate.setDate(firstDate.getDate() - 100000);
+    firstDate.setDate(firstDate.getDate() - 10000);
     firstDate.setHours(0, 0, 0, 0);
 
-    for (var i = 0; i < 100000; i++) {
+    for (var i = 0; i < 10000; i++) {
         var newDate = new Date(firstDate);
         newDate.setDate(newDate.getDate() + i);
 
@@ -142,7 +142,7 @@ var panel5 = {
         title: "Değer5 :",
         "id": "g5",
         "useDataSetColors": false,
-        "lineColor": "#07EFEB",
+        "lineColor": "#391A5A",
         "valueField": "value5",
         "comparable": false,
         "balloonText": "[[title]] :<b>[[value]]</b>",
@@ -215,10 +215,26 @@ var chartOpt = {
     "periodSelector": {
         "position": "left",
         "periods": [{
-            "period": "MM",
+            "period": "DD",
             "selected": true,
+            "count": 7,
+            "label": "1 Hafta"
+        }, {
+            "period": "DD",
+            "count": 15,
+            "label": "15 Gün"
+        }, {
+            "period": "MM",
             "count": 1,
-            "label": "1 month"
+            "label": "1 Ay"
+        }, {
+            "period": "MM",
+            "count": 3,
+            "label": "3 Ay"
+        }, {
+            "period": "MM",
+            "count": 6,
+            "label": "6 Ay"
         }, {
             "period": "YYYY",
             "count": 1,
